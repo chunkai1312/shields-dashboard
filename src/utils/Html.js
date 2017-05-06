@@ -26,15 +26,12 @@ class Html extends Component {
           {head.meta.toComponent()}
           {head.link.toComponent()}
           {head.script.toComponent()}
-
           <link rel="shortcut icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-          {/* styles (will be present only in production with webpack extract text plugin) */}
-          {Object.keys(assets.styles).map((style, key) =>
-            <link href={assets.styles[style]} key={key} media="screen, projection" rel="stylesheet" type="text/css" charSet="UTF-8" />
-          )}
-
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+          <link href={assets.styles.vendor} media="screen, projection" rel="stylesheet" type="text/css" charSet="UTF-8" />
+          <link href={assets.styles.main} media="screen, projection" rel="stylesheet" type="text/css" charSet="UTF-8" />
         </head>
         <body>
           <div id="root" dangerouslySetInnerHTML={{ __html: content }} />
