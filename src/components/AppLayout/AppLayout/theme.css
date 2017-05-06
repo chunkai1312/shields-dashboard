@@ -1,0 +1,35 @@
+@import "react-toolbox/lib/layout/theme.css";
+
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.panel {
+  background: var(--palette-grey-200) !important;
+}
+
+.sidebarDrawer,
+.navDrawerDrawer {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+  padding-top: var(--appbar-height);
+
+  @media screen and (--xxs-viewport) and (--portrait) {
+    padding-top: var(--appbar-height-m-portrait);
+  }
+
+  @media screen and (--xs-viewport) and (--landscape) {
+    padding-top: var(--appbar-height-m-landscape);
+  }
+
+  &.pinned {
+    border-right: 0;
+    box-shadow: var(--shadow-4p);
+  }
+}

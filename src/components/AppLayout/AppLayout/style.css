@@ -1,0 +1,9 @@
+@import "react-toolbox/lib/colors.css";
+
+.loadingBar {
+  position: absolute;
+  top: 0;
+  z-index: 500;
+  height: 2px;
+  background-color: red;
+}

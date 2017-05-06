@@ -1,0 +1,30 @@
+@import "react-toolbox/lib/layout/theme.css";
+@import "react-toolbox/lib/avatar/theme.css";
+
+.userProfile {
+  position: relative;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: calc(1.6 * var(--unit));
+
+  & .logo {
+    width: calc(var(--avatar-size) * 1.5);
+    height: calc(var(--avatar-size) * 1.5);
+  }
+
+  & .info {
+    line-height: 1.5;
+    margin-top: 10px;
+    color: var(--color-white);
+
+    & .name {
+      font-size: var(--font-size-big);
+      font-weight: var(--font-weight-bold);
+    }
+
+    & .email {
+      font-size: var(--font-size-normal);
+    }
+  }
+}
