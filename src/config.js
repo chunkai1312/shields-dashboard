@@ -22,6 +22,11 @@ module.exports = {
     }
   },
 
+  reactToolboxVariables: {
+    'color-primary': 'var(--palette-teal-500)',
+    'color-primary-dark': 'var(--palette-teal-700)'
+  },
+
   devServer: {
     host: 'localhost',
     port: 3000
