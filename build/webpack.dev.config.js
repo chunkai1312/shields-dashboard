@@ -49,7 +49,13 @@ module.exports = {
                   }),
                   require('postcss-mixins'),
                   require('postcss-each'),
-                  require('postcss-cssnext')
+                  require('postcss-cssnext')({
+                    features: {
+                      customProperties: {
+                        variables: config.reactToolboxVariables
+                      }
+                    }
+                  })
                 ]
               }
             }
