@@ -1,15 +1,13 @@
-import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { AppLayout } from '../components'
 import * as actions from '../actions'
 
 const mapStateToProps = (state) => ({
-  routing: state.routing,
-  counter: state.counter
+  layout: state.layout
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  actions: bindActionCreators(actions, dispatch)
+  toggleNavDrawer: () => dispatch(actions.toggleNavDrawer())
 })
 
 const App = connect(mapStateToProps, mapDispatchToProps)(AppLayout)
