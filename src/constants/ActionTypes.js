@@ -1,0 +1,5 @@
+export const SET_PAGE_TITLE = 'layout/SET_PAGE_TITLE'
+export const TOGGLE_NAV_DRAWER = 'layout/TOGGLE_NAV_DRAWER'
+export const TOGGLE_BACK_BUTTON = 'layout/TOGGLE_BACK_BUTTON'
+export const SHOW_PAGE_LOADING = 'layout/SHOW_PAGE_LOADING'
+export const HIDE_PAGE_LOADING = 'layout/HIDE_PAGE_LOADING'
